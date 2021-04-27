@@ -7,7 +7,7 @@ RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
 
 # Install jags
-sudo apt-get install jags 
+RUN sudo apt-get install jags 
 
 ## run any install.R scripts we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
