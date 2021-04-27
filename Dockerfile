@@ -7,7 +7,10 @@ RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
 
 # Install jags
-RUN sudo apt-get install jags 
+RUN apt-get update && . /etc/environment \
+  && wget sourceforge.net/projects/mcmc-jags/files/JAGS/4.x/Source/JAGS-4.3.0.tar.gz  -O jags.tar.gz \
+  && tar -xf jags.tar.gz \
+  && cd JAGS* && ./configure && make -j4 && make install
 
 ## run any install.R scripts we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
