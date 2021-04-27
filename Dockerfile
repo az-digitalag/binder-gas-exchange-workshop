@@ -5,7 +5,9 @@ USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
-  
-## run any apt.txt and install.R scripts we find
-RUN if [ -f apt.txt ]; then R --quiet -f apt.txt; fi
+
+# Install jags
+sudo apt-get install jags 
+
+## run any install.R scripts we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
