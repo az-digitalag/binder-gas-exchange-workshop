@@ -1,4 +1,4 @@
-FROM rocker/binder:latest
+FROM rocker/binder:4.0.2
 
 # Copy repo into ${HOME}, make user own $HOME, install JAGS
 USER root
