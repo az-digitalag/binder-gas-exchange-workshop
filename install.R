@@ -1,4 +1,3 @@
-Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = "true")
 install.packages("tidyverse")
 install.packages("udunits2")
 install.packages("plantecophys")
