@@ -6,7 +6,7 @@
 
 ### Interactive RStudio Environment
 
-Go to RStudio on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/az-digitalag/binder-gas-exchange-workshop.git/main?urlpath=rstudio)
+Go to RStudio on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/az-digitalag/binder-gas-exchange-workshop.git/41de3e0e9a72d3e3002d8d8492d9e6d8130e10ba/main?urlpath=rstudio)
 
 Software, data, and scripts needed in this workshop are already loaded. 
 
